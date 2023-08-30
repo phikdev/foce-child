@@ -1,0 +1,42 @@
+@keyframes rotating {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  .story h2::after,
+  #studio h2::after,
+  #studio h2::before,
+  .story__article::after,
+  .site-footer::before,
+  .site-footer ul::after,
+  .site-footer::after
+  
+  
+   {
+    animation: rotating 20s  linear infinite;
+  }
+  .story h2::after{
+    height: 154px;
+    width: 154px;
+  }
+  #studio h2::after{
+    height: 109px;
+    width: 109px;
+  }
+  #studio h2::before{
+    height: 200px;
+    width: 200px;
+  }
+  .story__article::after{
+    height: 188px;
+    width: 188px;
+  }
+  .site-footer::before{
+    height: 154px;
+    width: 154px;
+  }
+  .site-footer::after{
+    height: 172.57px;
+    width:172.57px;
+  }
+  
