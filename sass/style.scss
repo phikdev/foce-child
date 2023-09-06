@@ -8,8 +8,8 @@
   #studio h2::before,
   .story__article::after,
   .site-footer::before,
-  .site-footer ul::after,
-  .site-footer::after
+  .site-footer ul::after
+  
   
   
    {
@@ -38,5 +38,117 @@
   .site-footer::after{
     height: 172.57px;
     width:172.57px;
+    padding-bottom: 710px;
   }
   
+  @keyframes wipe-enter {
+    0% {
+      transform: translate(0,100%);
+      opacity: 0;
+
+    }
+    100% {
+      transform: translate(0,0%);
+      opacity: 1;
+    }
+
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .banner img {
+      animation-name: wipe-enter;
+      animation-duration: 1s;
+      animation-iteration-count:initial;
+    }
+  }
+  @keyframes wipe-enter {
+    0% {
+      transform: translate(0,100%);
+      opacity: 0;
+
+    }
+    100% {
+      transform: translate(0,0%);
+      opacity: 1;
+    }
+
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    #characters {
+      animation-name: wipe-enter;
+      animation-duration: 1s;
+      animation-iteration-count:initial;
+    }
+  }
+
+ 
+
+
+
+
+@keyframes wipe-enter {
+  0% {
+    transform: translate(0,80%);
+    opacity: 0;
+
+  }
+  100% {
+    transform: translate(0,0%);
+    opacity: 1;
+  }
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #studio {
+    animation-name: wipe-enter;
+    animation-duration: 1s;
+    animation-iteration-count:initial;
+  }
+}
+@keyframes wipe-enter {
+  0% {
+    transform: translate(0,100%);
+    opacity: 0;
+
+  }
+  100% {
+    transform: translate(0,0%);
+    opacity: 1;
+  }
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #place {
+    animation-name: wipe-enter;
+    animation-duration: 1s;
+    animation-iteration-count:initial;
+  }
+}
+
+#oscar{
+  position: relative;
+  padding-bottom: 250px;
+  margin-left: 150px;
+
+}
+
+
+ 
+ footer{
+   display :flex;
+   flex-direction: column;
+ }
+ #background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: +1;
+  }
