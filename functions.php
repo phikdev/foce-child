@@ -11,6 +11,7 @@
 	    wp_enqueue_style( 'style-name', get_stylesheet_uri() );
 
 	    wp_enqueue_script( 'script-name', get_stylesheet_directory_uri() . '/js/script.js', array(), '1.0.0', true );
+       /* wp_enqueue_script( 'script-name', get_stylesheet_directory_uri() . '/js/skrollr.mini.js', array(), '1.0.0', true );*/
     }
         add_action( 'wp_enqueue_scripts', 'scripts' );
 

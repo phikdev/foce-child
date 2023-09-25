@@ -13,8 +13,10 @@
  
 
 	<footer id="colophon" class="site-footer">
+    
         <?php 
          get_template_part('template-parts/oscar');
+         
         ?>
         
         <ul>
