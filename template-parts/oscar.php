@@ -1,3 +1,3 @@
 <section id="oscar">
-    <img src="<?php echo get_template_directory_uri() . '/assets/images/perso.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+<img  src="<?php echo get_theme_file_uri('assets/image/perso.png'); ?>" alt="image oscar">
 </section>

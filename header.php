@@ -26,19 +26,23 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'foce' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
+		<nav id="nav">
+            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
             <ul>
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
-                <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
+            
+                <li class="logoBurger"><img id="add" class="littleLogo" src="<?php echo get_theme_file_uri('assets/image/Image logo en paralax.png'); ?>" alt="petit logo"> </li>
+                <li class="storyBurger"><a id="add1" href="#story">Histoire</a></li>
+                <li class="charactersBurger"><a id="add2" href="#characters">Personnages</a></li>
+                <li class="placeBurger"> <a id="add3" href="#place">Lieu</a></li>
+                <li class="studioBurger"><a id="add4" href="#studio">Studio Koukaki</a></li>
+                <img class="marque" src="<?php echo get_theme_file_uri('assets/image/Studio Koukaki.png'); ?>" alt="studio koukaki"> 
+                
             </ul>
-
-		</nav><!-- #site-navigation -->
+            
+            <div id="icons"></div>
+            
+        </nav><!-- #site-navigation -->
+        
+           
+        
 	</header><!-- #masthead -->

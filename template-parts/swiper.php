@@ -2,19 +2,19 @@
     slides-per-view="2.5" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="100"
     coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false" loop="true">
     <swiper-slide>
-      <img src="<?php echo get_template_directory_uri() . '/assets/images/Kawaneko.png'; ?> " alt="logo Fleurs d'oranger & chats errants"> 
+      <img src="<?php echo get_theme_file_uri('assets/image/Kawaneko.png'); ?> " alt="chat jaune"> 
     </swiper-slide>
     <swiper-slide>
-      <img src="<?php echo get_template_directory_uri() . '/assets/images/Orenjiiro-1.png'; ?> " alt="logo Fleurs d'oranger & chats errants"> 
+      <img src="<?php echo get_theme_file_uri('assets/image/Orenjiiro-1.png'); ?> " alt="chat bleu"> 
     </swiper-slide>
     <swiper-slide>
-      <img src="<?php echo get_template_directory_uri() . '/assets/images/Pinku-1.png'; ?> " alt="logo Fleurs d'oranger & chats errants"> 
+      <img src="<?php echo get_theme_file_uri('assets/image/Pinku-1.png'); ?> " alt="chat rose"> 
     </swiper-slide>
     <swiper-slide>
-      <img src="<?php echo get_template_directory_uri() . '/assets/images/Tenshi-1.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+      <img src="<?php echo get_theme_file_uri('assets/image/Tenshi-1.png'); ?> " alt="chat vert">
     </swiper-slide>
     <swiper-slide>
-      <img src="<?php echo get_template_directory_uri() . '/assets/images/Jaakuna-1.png'; ?> " alt="logo Fleurs d'oranger & chats errants"> 
+      <img src="<?php echo get_theme_file_uri('assets/image/Jaakuna-1.png'); ?> " alt="chat orange"> 
     </swiper-slide>
 </swiper-container>
 

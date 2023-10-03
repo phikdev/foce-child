@@ -1,6 +1,8 @@
 /*banniere*/
 #background-video {
   object-fit: cover;
+  width: 1440px;
+  height: 97vh;
   z-index: 1;
 }
 
@@ -162,6 +164,7 @@ footer {
   margin-left: 740px;
   padding-bottom: 360px;
   z-index: 15;
+  filter: blur(5px);
 }
 .big{
   display: flex;
@@ -180,16 +183,165 @@ footer {
 @keyframes wipe {
   0% {
     transform: translate(-300px, 0);
-    opacity: 0;
+    /*opacity: 0;*/
   }
   100% {
     transform: translate(0px, 0);
-    opacity: 1;
+   /* opacity: 1;*/
   }
 }
 .animCloud {
   animation-name: wipe;
   animation-duration: 3s;
   animation-iteration-count: initial;
+  
+}
+
+nav h1{
+  font-size: 22px;
+  padding-left: 40%;
+  
+  
+}
+
+ nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFD5A2;
+  height: 80px;
+  width: 1440px;
+}
+
+#nav {
+  position: fixed;
+  
+}
+nav ul {
+  opacity: 0;
+  display: flex;
+  
+  
+  
+}
+li{
+  list-style: none;
+}
+nav a, nav h3{
+  text-decoration: none;
+}
+.storyBurger::before{
+  content: url("../assets/image/cat (1).png");
+  position: absolute;
+  
+  right: 19em;
+  top : 2.5em;
+
+}
+.logoBurger::before{
+  content: url("../assets/image/Orchid.png");
+  position: absolute;
+  left: 3.6em;
+  top:1em;
+}
+.charactersBurger::before{
+  content: url("../assets/image/Sunflower.png");
+  position: absolute;
+  bottom: 9.5em;
+  right: 6em;
+}
+.charactersBurger::after{
+  content: url("../assets/image/Random Flower.png");
+  position: absolute;
+  top: 5.7em;
+  left: 25.5em;
+}
+.placeBurger::before{
+  content: url("../assets/image/Flower.png");
+  position: absolute;
+  right: 21em;
+}
+.placeBurger::after{
+  content: url("../assets/image/Group 180.png");
+  position: absolute;
+  top: 6.5em;
+  right: 8em;
+}
+.studioBurger::before{
+  content: url("../assets/image/Hibiscus footer.png");
+  position: absolute;
+  left: 21em;
+  top: 8.5em
+}
+.studioBurger::after{
+  content: url("../assets/image/cat.png");
+  position: absolute;
+  right: 22.5em;
+  top: 10.5em;
+}
+
+.storyBurger::before, .placeBurger::after, .studioBurger::after{
+  animation: float 3s ease-in-out infinite;
+}
+
+.placeBurger::before, .charactersBurger::before{
+  animation: rotating 20s linear infinite;
+}
+
+@media (max-width: 2560px) {
+  #icons {
+    cursor: pointer;
+    display: block;
+    padding-right: 15%;
+    
+  }
+  #icons:before {
+    content: "\2630";
+    
+  }
+  .active #icons:before {
+    content: "\2715";
+  }
+  nav ul {
+    position: fixed;
+    left: -10000px;
+    top: 12%;
+    flex-direction: column;
+    background: #fff5e9;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+    
+    opacity: 1;
+  }
+  nav li {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 64px;
+    
+  }
+  .animationBurger{
+    
+    animation-name: wipe-enter;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+
+  }
+  nav li a:hover {
+    color:black;
+    text-shadow: rgba(255, 68, 0, 0.562) 2px 2px 2px;
+  }
+  nav.active ul {
+    
+    left: -3em;
+    height:100vh;
+  }
+}
+
+.marque{
+  width: 160.25px;
+  height: 12.13px;
+  margin-left: 45%;
+  margin-top: 135px;
   
 }
